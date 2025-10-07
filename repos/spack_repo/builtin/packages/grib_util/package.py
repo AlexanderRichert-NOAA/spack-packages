@@ -16,7 +16,7 @@ class GribUtil(CMakePackage):
     url = "https://github.com/NOAA-EMC/NCEPLIBS-grib_util/archive/refs/tags/v1.2.3.tar.gz"
     git = "https://github.com/NOAA-EMC/NCEPLIBS-grib_util"
 
-    maintainers("AlexanderRichert-NOAA", "Hang-Lei-NOAA", "edwardhartnett")
+    maintainers("AlexanderRichert-NOAA", "Hang-Lei-NOAA", "AlysonStahl-NOAA")
 
     version("develop", branch="develop")
     version("1.5.0", sha256="ae5e02f963f6531650669bbe4aed13b28c419cfb6a7007b0dd1fefbffdea02ff")
