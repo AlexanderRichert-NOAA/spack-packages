@@ -67,6 +67,7 @@ class Ecflow(CMakePackage):
         "boost@1.72:+chrono+date_time+exception+filesystem+program_options+python+regex+serialization+system+test+thread+timer+pic",  # noqa
         when="@5: +static_boost",
     )
+    conflicts("boost %intel", msg="ecFlow client & ui fail at runtime with Intel-built Boost")
 
     depends_on("openssl@1:", when="@5:")
     depends_on("pkgconfig", type="build", when="+ssl ^openssl ~shared")
