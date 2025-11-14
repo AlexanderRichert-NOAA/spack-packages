@@ -59,6 +59,7 @@ class Ecflow(CMakePackage):
 
     # Use newer boost with v5 up to 1.84.0 - https://github.com/spack/spack/issues/44116
     conflicts("boost@1.85:", when="@:5.11.4")
+    conflicts("boost %intel", msg="ecFlow client & ui fail at runtime with Intel-built Boost")
     depends_on(
         "boost@1.72:+chrono+date_time+exception+filesystem+program_options+python+regex+serialization+system+test+thread+timer",  # noqa
         when="@5:",
