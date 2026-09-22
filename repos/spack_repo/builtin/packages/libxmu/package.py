@@ -36,6 +36,7 @@ class Libxmu(AutotoolsPackage, XorgPackage):
     depends_on("kbproto")
     depends_on("libxext")
     depends_on("libx11")
+    depends_on("libxcb")
 
     depends_on("xextproto", type="build")
     depends_on("pkgconfig", type="build")
